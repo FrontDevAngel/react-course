@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test de GifGridItem.test.js Test del componente renderizado comparado con snapshot 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="I See You Soccer GIF by UEFA"
+    src="https://media1.giphy.com/media/Ve7wX45gaOFmw8eeEM/giphy.gif?cid=755024f7e5gkbi9myo8ucsrnlsszjpk7uzacr9t3kxh0xffg&rid=giphy.gif"
+  />
+  <p>
+    I See You Soccer GIF by UEFA
+  </p>
+</div>
+`;
