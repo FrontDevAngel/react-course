@@ -1,12 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Preubas en <Navbar /> Debe mostrarse correctamente 1`] = `
+exports[`Pruebas en <Navbar /> Debe mostrarse correctamente 1`] = `
 <nav
   className="navbar navbar-expand-sm navbar-dark bg-dark px-4"
 >
   <a
     className="navbar-brand"
-    href="/"
     onClick={[Function]}
   >
     Asociaciones
@@ -20,7 +19,6 @@ exports[`Preubas en <Navbar /> Debe mostrarse correctamente 1`] = `
       <a
         aria-current={null}
         className="nav-item nav-link"
-        href="/marvel"
         onClick={[Function]}
       >
         Marvel
@@ -28,7 +26,6 @@ exports[`Preubas en <Navbar /> Debe mostrarse correctamente 1`] = `
       <a
         aria-current={null}
         className="nav-item nav-link"
-        href="/dc"
         onClick={[Function]}
       >
         DC
@@ -36,7 +33,6 @@ exports[`Preubas en <Navbar /> Debe mostrarse correctamente 1`] = `
       <a
         aria-current={null}
         className="nav-item nav-link"
-        href="/search"
         onClick={[Function]}
       >
         Search

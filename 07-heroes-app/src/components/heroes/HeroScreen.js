@@ -1,6 +1,10 @@
 import React, { useMemo } from 'react';
 import { useParams, Redirect } from 'react-router-dom';
+import { heroeImages } from '../../helpers/heroImages';
 import { getHeroesById } from '../../selectors/getHeroeById';
+
+// import batman from '../../assets/heroes/dc-batman.jpg' // importación de imagen estatica
+// const heroeImages = require.context('../../assets/heroes', true);
 
 export const HeroScreen = ({ history }) => {
     // Custom Hook de React-router-dom que nos permite traer los parametros de la URL
@@ -29,7 +33,9 @@ export const HeroScreen = ({ history }) => {
         <div className='row mt-5'>
             <div className='col-4'>
                 <img
-                    src={`../assets/heroes/${heroeId}.jpg`}
+                    // src={`../assets/heroes/${heroeId}.jpg`}
+                    // src={batman} // estatico
+                    src={heroeImages(`./${heroeId}.jpg`).default}
                     alt={superhero}
                     className='img-thumbnail animate__animated animate__fadeInLeft'
                 />

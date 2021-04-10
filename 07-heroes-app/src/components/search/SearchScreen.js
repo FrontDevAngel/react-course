@@ -11,7 +11,7 @@ export const SearchScreen = ({ history }) => {
     // Uso de librería de Query String para obtener el parseo del query sin tantas complicaciones ?q=batman
     const { q: query = '' } = queryString.parse(location.search);
 
-    const [values, handleInputsChange] = useForm({ search: '' });
+    const [values, handleInputsChange] = useForm({ search: query });
     const { search } = values;
 
     const heroesFiltered = useMemo(() => getHeroesByName(query), [query]);
