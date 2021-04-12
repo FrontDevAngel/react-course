@@ -10,7 +10,7 @@ export const HeroScreen = ({ history }) => {
     // Custom Hook de React-router-dom que nos permite traer los parametros de la URL
     const { heroeId } = useParams();
 
-    // Con useMemo podemso memorizar los resukltados si nuestras dependencias se mantienen igual
+    // Con useMemo podemos memorizar los resultados si nuestras dependencias se mantienen igual
     const hero = useMemo(() => getHeroesById(heroeId), [heroeId]);
 
     if (!hero) {
