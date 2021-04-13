@@ -1,10 +1,6 @@
 import React from 'react';
+import { AppRouter } from './routers/AppRouter';
 
 export default function JournalApp() {
-    return (
-        <div>
-            <h2>Lo que sea</h2>
-            <p>de verdad, lo que sea!</p>
-        </div>
-    );
+    return <AppRouter />;
 }
