@@ -1,0 +1,93 @@
+.auth {
+    &__main {
+        background-color: $light-color;
+        height: 100vh;
+    }
+
+    &__container {
+        display: flex;
+        margin: 0 auto;
+        max-width: 960px;
+        padding-bottom: 80px;
+        padding-top: 160px;
+    }
+
+    &__title {
+        color: $primary-color;
+    }
+
+    &__col {
+        &--intro {
+            flex: 1 0 0px;
+            padding-right: 48px;
+        }
+
+        &--form {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+                0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 25px;
+        }
+    }
+}
+
+.form {
+    &--auth {
+        text-align: center;
+    }
+
+    &__input,
+    &__submit {
+        margin-bottom: 15px;
+    }
+
+    &__submit,
+    &__link {
+        letter-spacing: 1.2px;
+    }
+
+    &__input {
+        border-radius: 5px;
+        border: 1px $primary-color solid;
+        display: block;
+        font-size: 18px;
+        padding: 12px 18px;
+        width: 364px;
+        transition: ease box-shadow 0.3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 2px 4px rgba($primary-color, 0.4);
+        }
+    }
+
+    &__submit {
+        background-color: $primary-color;
+        border: 0 transparent none;
+        border-radius: 8px;
+        color: #ffffff;
+        cursor: pointer;
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 18px 23px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: ease background-color 0.3s;
+        width: 100%;
+
+        &:hover {
+            background-color: $secondary-color;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        color: $primary-color;
+        transition: ease color 0.3s;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
